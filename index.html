@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charaset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculando o Trajeto</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .container {
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                width: 300px;
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+                margin: 10px 0 5px;
+            }
+            
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #Enviar {
+                background: #28a745;
+                color: white;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            #Enviar:hover {
+                background: #218838;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Calculando o Trajeto</h2>
+            <form action="ctrajeto_km.php" method="POST">
+                <label for="tempo">Horas gastas na viagem:</label>
+                <input name="tempo" id="tempo" type="text" placeholder="Digite o tempo em horas">
+
+                <label for="vm">Velocidade média (km/h):</label>
+                <input name="vm" id="vm" type="text" placeholder="Digite a velocidade media">
+
+                <input id="Enviar" value="Calcular" type="submit">
+            </form>
+        </div>
+    </body>
+</html>
